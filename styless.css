@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Ajuste o tipo de fonte conforme necessário */
+    margin: 0; 
+    padding: 0; 
+    background-image: url(https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?cs=srgb&dl=pexels-matt-hardy-3560168.jpg&fm=jpg);
+  }
+  
+  header {
+    padding: 5px; 
+    font-size: 40px; /* Ajuste o valor do tamanho da fonte conforme necessário */
+    color: #888; /* Ajuste a cor da fonte conforme necessário */
+    font-family: "Courier New", monospace; /* Ajuste o tipo de fonte conforme necessário */
+  }
+
+  footer{
+    padding: 20px;
+  }
+
+  main {
+      padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #260a70;;
+    
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  h1{text-align: center;}
+
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+  }
+ .sobre {
+    background-color: rgba(198, 236, 234, 0.85);
+    color: #260a70;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .sobre .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sobre .message {
+    text-align: justify;
+    padding: 20px;
+  }
+
+
+  
