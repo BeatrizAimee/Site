@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafael Freitas Garcia</title>
   <link rel="stylesheet" href="styless.css">
-
+  <!-- Adicione o link para o CSS do Slick Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <!-- Adicione o link para o arquivo jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+  <!-- Adicione o link para o JavaScript do Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
   <header>
@@ -18,20 +20,16 @@
   <main>
 
     <div class="container">
-    <section class="sobre">
+    <div class="sobre">
       <div class="title">Para Fafa</div>
       <div class="message">
         <p>Sou eternamente grata por ter você na minha vida, vou ficar para sempre tentando te falar e demonstrar o quanto você é importante pra mim. Você me ajuda a manter focada nos meus objetivos, e me inspira a dar sempre um passo a frente, a tentar todos os dias ser um pouco melhor. Sua presença traz uma luz nos meus dias, e as vezes eu sorrio só de pensar o quão sortuda eu sou por ter você do meu lado.
-        
           Sua força e determinação são admiráveis, como você enfrenta os desafios da vida e sempre encontra uma maneira de superá-los, ou resiliência para aceitá-los. Ver você me dá confiança que, coo as condições necessárias, eu posso enfrentar meus próprios obstáculos.
-          
           Você é uma pessoa especial, alguém com quem posso contar em todos os momentos. Sua gentileza e carinho não têm limites, e seu sorriso ilumina meu mundo (sim, cliche, pedi pro chatgpt me dar ideias). A simplicidade com que você encara a vida é uma lição constante para mim, e gosto até do seu jeitinho rabujento de manhã.
-          
           Nossa jornada não é fácil, eu trocaria várias coisas, mas em nenhum momento dela eu deixei de te achar top 2 pessoas do mundo, e quero completar cada ítem da listinha do EAD com você (principalmente o ítem "mergulhar na austrália", quero muito esse)
         </p>
         <p>
           Esse site foi criado pra você por boiolisse minha, mas queria que capturasse um pouco das coisas que você ama. Um lugar onde o mundo submarino ganha vida, onde os jogos de suspense nos arrepiam e onde a microeletrônica revela suas maravilhas. Quero que você saiba que cada detalhe me lembra você e tem todo meu carinho.
-          
           Meu amor por você é igual o limite de x tendendo ao infinito de x+93045056, e cada presente que eu te dou representa apenas uma pequena fração do quanto você significa para mim.
         </p>
         <p>
@@ -40,21 +38,35 @@
         <p>
           Bibia</p>
       </div>
-    </section>
+    </div>
 
-    <!--section class="carousel">
-      <h2>Carrossel de Fotos</h2>
+    <div class="carousel">
+      <div class="title">Carrossel de Fotos</div>
       <div class="slick-carousel">
         <div><img src="fafa1.jpeg" alt="Foto 1"></div>
         <div><img src="fafa2.jpeg" alt="Foto 2"></div>
-        
+        <div><img src="fafa3.jpg" alt="Foto 3"></div>
+        <div><img src="fafa4.jpg" alt="Foto 4"></div>
+        <div><img src="fafa5.jpg" alt="Foto 5"></div>
+        <div><img src="fafa6.jpg" alt="Foto 6"></div>
+        <div><img src="fafa7.jpg" alt="Foto 7"></div>
+        <div><img src="fafa8.jpg" alt="Foto 8"></div>
+        <div><img src="fafa9.jpg" alt="Foto 9"></div>
+        <div><img src="fafa10.jpg" alt="Foto 10"></div>
+        <div><img src="fafa11.jpg" alt="Foto 11"></div>
+        <div><img src="fafa12.png" alt="Foto 12"></div>
+        <div><img src="fafa13.png" alt="Foto 13"></div>
+        <div><img src="fafa14.png" alt="Foto 14"></div>
+        <!-- Adicione mais imagens ao carrossel conforme necessário -->
       </div>
-    </section-->
+    </div>
   </div>
 
-    <section>
-      <h2>Mundo Submarino</h2>
-      <p>Aqui você pode compartilhar informações interessantes sobre criaturas marinhas, plantas aquáticas, dinossauros marinhos ou qualquer tópico relacionado ao mundo submarino que seu amigo goste. Você pode incluir imagens, fatos interessantes e até mesmo links para sites ou vídeos relacionados.</p>
+    <section class="quadro">
+      <div class="title">Mapa dos Tesouros: Clique nos Tesouros</div>
+      <div class="mapa">
+        <img src="https://th.bing.com/th/id/R.69c22f2982f5948e63e20f1ebfc6d2d9?rik=5i3qSozrT6bBPg&riu=http%3a%2f%2f3.bp.blogspot.com%2f_evsx5sAIVrc%2fTOIh52FpsHI%2fAAAAAAAAAl0%2f1_a2wSoNkMM%2fs1600%2ftreasure-map-1.jpg&ehk=3UY8I3lfLa9fNjJniSxbUjsL5YsMrRQCwUTorwF%2fddw%3d&risl=&pid=ImgRaw&r=0" alt="Mapa dos Tesouros">
+      </div>
     </section>
 
     <section>
@@ -72,21 +84,19 @@
     <p>&copy; 2023 - Beatriz</p>
   </footer>
 
-<script>
-  $(document).ready(function() {
-    $('.carousel').slick({
-      arrows: true, // Mostrar as setas de navegação
-      dots: true, // Mostrar os indicadores de slide
-      acessibility: true, // Permitir navegação por teclado
-      infinite: true, // Permitir rolagem cíclica
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
+  <script>
+    $(document).ready(function() {
+      $('.slick-carousel').slick({
+        arrows: true, // Desativa as setas do carrossel
+        dots: false, // Adicione pontos indicadores para as imagens
+        infinite: true, // Faça o carrossel ser infinito (ciclo contínuo)
+        autoplay: true, // Ative a reprodução automática
+        autoplaySpeed: 1500, // Defina o intervalo de tempo entre as transições
+        slidesToShow: 2, // Quantas imagens serão mostradas por vez
+        slidesToScroll: 1 // Quantas imagens serão percorridas a cada transição
+      });
     });
-  });
-  
-</script>
+  </script>
 
 </body>
 </html>
