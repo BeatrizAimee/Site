@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-    <h1>Rafael</h1>
+    <h1>O estranho munndo de Rafael</h1>
   </header>
 
   <main>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="carousel">
-      <div class="title">Carrossel de Fotos</div>
+      <div class="title">Carrossel de Fotinhas</div>
       <div class="slick-carousel">
         <div><img src="fafa1.jpeg" alt="Foto 1"></div>
         <div><img src="fafa2.jpeg" alt="Foto 2"></div>
@@ -60,6 +60,82 @@
         <!-- Adicione mais imagens ao carrossel conforme necessário -->
       </div>
     </div>
+  </div>
+
+  <section class="playlist">
+    <h2>Musiquinhas pra você</h2>
+    <p>Tomara que você não odeie essas 42 músicas selecionadas da minha Playlist exclusivamete pra você - não tem MPB relaxa</p>
+    <div class="playlist-container">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Cra3uXTtbHdfXrPwsTEuJ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <div class="question-container">
+    <h2>Rápido, um Quizz!</h2>
+
+    <p>Pergunta 1 : Quem é considerado o "pai" da computação?</p>
+    <input type="text" id="answer1">
+    <button onclick="checkAnswer(1)">Verificar</button>
+
+
+    <p>Pergunta 2 : Qual é o acrônimo para a unidade básica de processamento em computadores?</p>
+    <input type="text" id="answer2">
+    <button onclick="checkAnswer(2)">Verificar</button>
+
+    <p>Pergunta 3 : Qual é a banda de rock famosa por seu álbum "The Wall"?</p>
+    <input type="text" id="answer3">
+    <button onclick="checkAnswer(3)">Verificar</button>
+
+    <p>Pergunta 4 : Qual é o sistema operacional desenvolvido pela Apple para seus computadores?</p>
+    <input type="text" id="answer4">
+    <button onclick="checkAnswer(4)">Verificar</button>
+
+    <p>Pergunta 5 : Qual é o processo de transformar código fonte em código de máquina?</p>
+    <input type="text" id="answer5">
+    <button onclick="checkAnswer(5)">Verificar</button>
+
+    <p>Pergunta 6 : O que significa a sigla "RAM" em relação a hardware de computador?</p>
+    <input type="text" id="answer6">
+    <button onclick="checkAnswer(6)">Verificar</button>
+
+    <p>Pergunta 7 : Qual é o dinossauro mais famoso da franquia "Jurassic Park"?</p>
+    <input type="text" id="answer7">
+    <button onclick="checkAnswer(7)">Verificar</button>
+
+    <p>Pergunta 8 : Qual é o maior império da história, abrangendo três continentes?</p>
+    <input type="text" id="answer8">
+    <button onclick="checkAnswer(8)">Verificar</button>
+
+    <p>Pergunta 9 : Qual é o elemento químico mais abundante no universo?</p>
+    <input type="text" id="answer9">
+    <button onclick="checkAnswer(9)">Verificar</button>
+
+    <p>Pergunta 10 : Qual é o nome da espécie de dinossauro que é conhecida por ter chifres e uma grande crista no topo da cabeça?</p>
+    <input type="text" id="answer10">
+    <button onclick="checkAnswer(10)">Verificar</button>
+
+    <p>Pergunta 11 : Qual é o maior animal do mundo?</p>
+    <input type="text" id="answer11">
+    <button onclick="checkAnswer(11)">Verificar</button>
+
+    <p>Pergunta 12 : Qual é o nome do evento que marcou o início da Revolução Francesa?</p>
+    <input type="text" id="answer12">
+    <button onclick="checkAnswer(12)">Verificar</button>
+
+    <p>Pergunta 13 : Qual é o termo usado para descrever a ciência que estuda insetos?</p>
+    <input type="text" id="answer13">
+    <button onclick="checkAnswer(13)">Verificar</button>
+
+    <p>Pergunta 14 : Qual componente do computador armazena dados a longo prazo, mesmo quando o computador está desligado?</p>
+    <input type="text" id="answer14">
+    <button onclick="checkAnswer(14)">Verificar</button>
+
+    <p>Pergunta 15 : Você me ama? -sim ou não - </p>
+    <input type="text" id="answer15">
+    <button onclick="checkAnswer(15)">Verificar</button>
+
+
+
   </div>
 
     
@@ -82,6 +158,140 @@
       });
     });
   </script>
+
+<script>
+  function checkAnswer(questionNumber) {
+  const answerInput = document.getElementById(`answer${questionNumber}`);
+  const answer = answerInput.value.trim().toLowerCase();
+
+  switch (questionNumber) {
+    case 1:
+      if (answer === 'alan turing') {
+        alert('Pista: 2 - S E P ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 2:
+      if (answer === 'cpu') {
+        alert('Pista: 144 - E S R ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 3:
+      if (answer === 'pink floyd') {
+        alert('Pista: 34 - E F L');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 4:
+      if (answer === 'macos') {
+        alert('Pista: 13 - M A ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 5:
+      if (answer === 'compilação') {
+        alert('Pista: 1 - V O');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 6:
+      if (answer === 'random access memory') {
+        alert('Pista: 5 - A L');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 7:
+      if (answer === 'rex') {
+        alert('Pista: 89 - V N I A ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 8:
+      if (answer === 'mongol') {
+        alert('Pista: 8 - E T ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 9:
+      if (answer === 'hidrogênio') {
+        alert('Pista: 1 - E É');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 10:
+      if (answer === 'triceratops') {
+        alert('Pista: 233 - A R ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 11:
+      if (answer === 'baleia azul') {
+        alert('Pista: 3 -E I C ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 12:
+      if (answer === 'queda da bastilha') {
+        alert('Pista: 55 - Z I');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 13:
+      if (answer === 'entomologia') {
+        alert('Pista: 377 - I O ');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 14:
+      if (answer === 'hd') {
+        alert('Pista: 21 - O');
+      } else {
+        alert('Resposta incorreta. Tente novamente.');
+      }
+      break;
+
+      case 15:
+      if (answer === 'sim') {
+        alert('Pista: Primeiro organize a sequencia de números. Depois, desembaralhe a sequência de letras para descobrir uma mensagem especial <3');
+      } else if (answer == 'não'){
+        alert('Você é bobão');
+      }else{
+        alert('Resposta Errada. Só tem uma resposta certa');
+      }
+      break;
+
+    // Adicione cases para as outras perguntas e respostas
+  }
+}
+</script>
+
 
 </body>
 </html>

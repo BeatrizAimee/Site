@@ -139,4 +139,68 @@ body {
 .slick-next {
   right: 10px; /* Posicionamento da seta direita */
 }
-  
+
+.playlist {
+  background-color: rgb(83, 88, 97);
+  padding: 20px;
+  text-align: center;
+  width: 80%; /* Defina a largura desejada, correspondendo às outras seções */
+  margin: 20px auto 0; /* Centralize horizontalmente */
+}
+
+.playlist h2 {
+  font-size: 30px;
+  color: #d4d7dd;
+}
+
+.playlist p {
+  color: #d4d7dd;
+}
+
+.playlist-container {
+  display: flex;
+  justify-content: center;
+}
+
+.question-container {
+  background-color: rgb(83, 88, 97);;
+  padding: 20px;
+  margin: 20px auto 0;
+  border: 5px solid #7e9699;
+  border-radius: 5px;
+  width:80%;
+}
+
+.question-container h2 {
+  font-size: 20px;
+  color: #d4d7dd;
+  margin-bottom: 10px;
+}
+
+.question-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #adadad;
+  background-color: #8f8f8f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #260a70;
+  color: #646262;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e127f;
+}
+
