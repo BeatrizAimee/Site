@@ -2,13 +2,16 @@ body {
     font-family: 'Times New Roman', Times, serif; /* Ajuste o tipo de fonte conforme necessário */
     margin: 0; 
     padding: 0; 
-    background-image: url(https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?cs=srgb&dl=pexels-matt-hardy-3560168.jpg&fm=jpg);
+    background-image: url(https://www.lbl.gov/wp-content/uploads/2022/06/RT_moores-law_news-grid-module_shutterstock_1568488030-e1656458250683.jpg);
   }
   
   header {
+
+    background-color: #010027; /* Cor de fundo da moldura */
+    padding: 10px; /* Espaçamento interno para criar a moldura preenchida */
     padding: 5px; 
     font-size: 40px; /* Ajuste o valor do tamanho da fonte conforme necessário */
-    color: #888; /* Ajuste a cor da fonte conforme necessário */
+    color: #000000; /* Ajuste a cor da fonte conforme necessário */
     font-family: "Courier New", monospace; /* Ajuste o tipo de fonte conforme necessário */
   }
 
@@ -20,9 +23,13 @@ body {
       padding: 20px;
   }
   
-  h1, h2, h3 {
-    color: #260a70;;
+  h1 {
+    color: #8f8f8f;;
     
+  }
+
+  h2,h3{
+    color: #ffffff;
   }
   
   section {
@@ -36,7 +43,7 @@ body {
     justify-content: space-between; /* Adicionado para espaço entre as seções */
     margin-left: auto;
     margin-right: auto;
-    background-color: antiquewhite;
+    background-color: rgb(83, 88, 97);
     width: 80%;
     height: 600px;
     padding: 20px;
@@ -55,7 +62,7 @@ body {
   .quadro .title{
     text-align: center;
     font-size: 35px;
-    color: #260a70;
+    color: #797979;
     padding: 20px;
   }
   .mapa{
@@ -65,8 +72,8 @@ body {
   }
   .sobre,
   .carousel {
-    background-color: rgba(198, 236, 234, 0.85);
-    color: #260a70;
+    background-color: #010027;
+    color: #797979;
     width: 50%;
     padding: 20px;
     box-sizing: border-box; /* Adicionado para incluir o preenchimento no cálculo da largura */
@@ -80,8 +87,12 @@ body {
   }
     
   .sobre .message {
-    text-align: justify;
-    padding: 20px;
+    text-align: justify; /* Alinhar o texto justificado */
+    padding: 20px; /* Espaçamento interno para facilitar a leitura */
+    white-space: normal; /* Permitir que o texto quebre automaticamente */
+    overflow-wrap: break-word; /* Quebrar palavras longas quando necessário */
+     max-height: 450px; /* Defina a altura máxima */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
   }
 
   .slick-carousel {
@@ -106,7 +117,7 @@ body {
   transform: translateY(-50%);
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo dos botões */
-  color: #fff; /* Cor do ícone das setas */
+  color: #008f99; /* Cor do ícone das setas */
   width: 20px; /* Largura dos botões */
   height: 20px; /* Altura dos botões */
   display: flex;
